@@ -2,6 +2,8 @@
 
 job queue for shell scripts, writing output to blob storage
 
+[![build status](https://secure.travis-ci.org/substack/batchdb-shell.png)](http://travis-ci.org/substack/batchdb-shell)
+
 # example
 
 ## queue a shell command
