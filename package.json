@@ -1,0 +1,42 @@
+{
+  "name": "batchdb-shell",
+  "version": "1.0.0",
+  "description": "job queue for shell scripts, writing output to blob storage",
+  "main": "index.js",
+  "dependencies": {
+    "defined": "0.0.0",
+    "duplexer2": "0.0.2",
+    "inherits": "^2.0.1",
+    "multiplex": "^3.0.0",
+    "shell-quote": "^1.4.2"
+  },
+  "devDependencies": {
+    "level": "~0.18.0",
+    "ansi-color-stream": "^1.0.0",
+    "concat-stream": "^1.4.6",
+    "mkdirp": "^0.5.0",
+    "tape": "^2.13.2"
+  },
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/substack/docker-compute.git"
+  },
+  "homepage": "https://github.com/substack/docker-compute",
+  "keywords": [
+    "batch",
+    "compute",
+    "queue",
+    "jobs",
+    "computing",
+    "docker"
+  ],
+  "author": {
+    "name": "James Halliday",
+    "email": "mail@substack.net",
+    "url": "http://substack.net"
+  },
+  "license": "MIT"
+}

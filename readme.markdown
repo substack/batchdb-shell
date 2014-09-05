@@ -1,5 +1,7 @@
 # batchdb-shell
 
+job queue for shell scripts, writing output to blob storage
+
 # example
 
 ## queue a shell command
@@ -85,6 +87,8 @@ environment variable or `'cmd'` on windows and `'sh'` everywhere else.
 The stderr and stdout of spawned processes are packed by
 [multiplex](https://npmjs.org/package/multiplex) and can be unpacked again with
 `compute.getOutput()`.
+
+Just like batchdb, you can pass in a custom `opts.store`.
 
 ## var sh = compute.getOutput(key)
 
