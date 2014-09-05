@@ -39,7 +39,7 @@ compute.run();
 
 show the result of a command, printing colorized results for stderr and stdout:
 
-`` js
+``` js
 var batchdb = require('batchdb-shell');
 var colorize = require('ansi-color-stream');
 var db = require('level')('/tmp/compute.db');
