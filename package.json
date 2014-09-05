@@ -1,6 +1,6 @@
 {
   "name": "batchdb-shell",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "job queue for shell scripts, writing output to blob storage",
   "main": "index.js",
   "dependencies": {
