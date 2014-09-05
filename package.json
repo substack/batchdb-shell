@@ -4,6 +4,7 @@
   "description": "job queue for shell scripts, writing output to blob storage",
   "main": "index.js",
   "dependencies": {
+    "batchdb": "^1.0.0",
     "defined": "0.0.0",
     "duplexer2": "0.0.2",
     "inherits": "^2.0.1",
