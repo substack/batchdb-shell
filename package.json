@@ -10,12 +10,12 @@
     "inherits": "^2.0.1",
     "multiplex": "^3.0.0",
     "shell-quote": "^1.4.2",
-    "xtend": "^4.0.0"
+    "xtend": "^4.0.0",
+    "concat-stream": "^1.4.6"
   },
   "devDependencies": {
     "level": "~0.18.0",
     "ansi-color-stream": "^1.0.0",
-    "concat-stream": "^1.4.6",
     "mkdirp": "^0.5.0",
     "tape": "^2.13.2"
   },

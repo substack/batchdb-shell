@@ -15,11 +15,11 @@ var db = require('level')(path.join(tmpdir, 'db'));
 
 test('run', function (t) {
     var expected = [
-        [ false, 'whoa\n' ],
-        [ false, 'beep\n' ],
-        [ true, '' ]
+        [ 0, false, 'whoa\n' ],
+        [ 0, false, 'beep\n' ],
+        [ 1, true, '' ]
     ];
-    t.plan(expected.length * 2);
+    t.plan(expected.length * 3);
     
     var compute = batchdb(db, { path: path.join(tmpdir, 'blobs') });
     compute.add().end('echo whoa');
@@ -29,11 +29,14 @@ test('run', function (t) {
     compute.on('result', function (key, id) {
         var ex = expected.shift();
         var ps = compute.getOutput(id);
+        ps.on('exit', function (code) {
+            t.equal(Boolean(code), Boolean(ex[0]));
+        });
         ps.stderr.pipe(concat(function (body) {
-            t.equal(ex[0], body.length > 0);
+            t.equal(ex[1], body.length > 0);
         }));
         ps.stdout.pipe(concat(function (body) {
-            t.equal(body.toString('utf8'), ex[1]);
+            t.equal(body.toString('utf8'), ex[2]);
         }));
     });
     compute.run();
