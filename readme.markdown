@@ -99,6 +99,16 @@ the results of the result identified by the result key `key`.
 
 This is similar to `compute.getResult(key)`, but with decoded channels.
 
+## sh.exitCode(function (code) {})
+
+Read the exit code from the output result.
+
+# events
+
+## sh.on('exit', function (code) {})
+
+The recorded exit code is saved and emitted on an `'exit'` event.
+
 # install
 
 With [npm](https://npmjs.org) do:
