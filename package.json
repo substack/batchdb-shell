@@ -8,10 +8,9 @@
     "defined": "0.0.0",
     "duplexer2": "0.0.2",
     "inherits": "^2.0.1",
-    "multiplex": "^3.0.0",
+    "shell-pack": "^1.0.0",
     "shell-quote": "^1.4.2",
-    "xtend": "^4.0.0",
-    "concat-stream": "^1.4.6"
+    "xtend": "^4.0.0"
   },
   "devDependencies": {
     "level": "~0.18.0",
