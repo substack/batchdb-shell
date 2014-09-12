@@ -1,12 +1,12 @@
 var batchdb = require('../');
-var os = require('os');
 var test = require('tape');
 var concat = require('concat-stream');
 var mkdirp = require('mkdirp');
+var tmpdir = require('osenv').tmpdir;
 
 var path = require('path');
 var tmpdir = path.join(
-    (os.tmpdir || os.tmpDir)(),
+    tmpdir(),
     'batchdb-shell.' +
     Math.random()
 );

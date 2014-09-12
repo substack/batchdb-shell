@@ -17,10 +17,13 @@
     "concat-stream": "^1.4.6",
     "level": "~0.18.0",
     "mkdirp": "^0.5.0",
-    "tape": "^2.13.2"
+    "osenv": "^0.1.0",
+    "tape": "^2.13.2",
+    "covert": "^1.0.0"
   },
   "scripts": {
-    "test": "tape test/*.js"
+    "test": "tape test/*.js",
+    "coverage": "covert test/*.js"
   },
   "repository": {
     "type": "git",
